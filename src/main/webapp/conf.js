@@ -11,7 +11,7 @@ const leaveButton = document.getElementById('leaveButton');
 leaveButton.addEventListener('click', leave);
 
 function leave() {
-    console.log('Ending call');
+    alert("I Am Leaving The Call ")
     peerConnection.close();
     signalingWebsocket.close();
     window.location.href = './index.html';
